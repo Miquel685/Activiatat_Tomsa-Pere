@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#F8F9FA">
+
+    <com.example.xat.StatusView
+        android:id="@+id/connectionStatus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexió al Servidor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:textColor="#2C3E50"/>
+
+    <EditText
+        android:id="@+id/etHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adreça IP (ex: 10.0.2.2)"
+        android:inputType="textUri"
+        android:padding="15dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Port (ex: 5000)"
+        android:inputType="number"
+        android:padding="15dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONNECTAR"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:backgroundTint="#2ECC71"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnVerAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VEURE AUTOR"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#34495E"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

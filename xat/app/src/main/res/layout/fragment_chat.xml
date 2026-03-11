@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#CED4DA">
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="SORTIR"
+        android:backgroundTint="#E74C3C"
+        android:textColor="#FFFFFF"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvChatArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Escriu un missatge..."
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:inputType="textShortMessage" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="ENVIAR"
+            android:backgroundTint="#3498DB"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnPdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPORTAR PDF"
+            android:backgroundTint="#27AE60"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
