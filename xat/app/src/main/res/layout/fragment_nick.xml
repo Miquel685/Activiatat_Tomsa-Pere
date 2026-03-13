@@ -1,51 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20dp"
-    android:background="#F8F9FA">
+    android:gravity="center_horizontal"
+    android:padding="30dp"
+    android:background="@color/bg_app">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tria el teu Nick"
-        android:textSize="24sp"
+        android:text="Connectat al servidor"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        android:textColor="@color/text_main"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nick"
+        android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginBottom="24dp"
-        android:textColor="#2C3E50"/>
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text_main"/>
 
     <EditText
         android:id="@+id/etNick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escriu el teu nom..."
-        android:inputType="textPersonName"
-        android:padding="15dp"
-        android:background="#FFFFFF"
-        android:elevation="2dp"
-        android:layout_marginBottom="16dp"/>
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Contrasenya"
-        android:inputType="textPassword"
-        android:padding="15dp"
-        android:background="#FFFFFF"
-        android:elevation="2dp"
-        android:layout_marginBottom="30dp"/>
+        android:hint="Deixa-ho en blanc per ser Anònim"
+        android:padding="12dp"
+        android:background="@drawable/bg_edittext"
+        android:textColor="@color/text_chat"
+        android:layout_marginBottom="50dp"/>
 
     <Button
         android:id="@+id/btnBegin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ENTRAR AL XAT"
+        android:layout_height="55dp"
+        android:text="BEGIN"
         android:textSize="18sp"
-        android:padding="15dp"
-        android:backgroundTint="#3498DB"
+        android:textStyle="bold"
+        app:cornerRadius="4dp"
+        android:backgroundTint="@color/button_orange"
         android:textColor="#FFFFFF"/>
 
 </LinearLayout>

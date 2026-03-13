@@ -1,49 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D7DEE6"
-    android:gravity="center"
+    android:background="#F8F9FA"
     android:orientation="vertical"
     android:padding="20dp">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:text="Autor:"
-        android:textColor="#2C3E50"
-        android:textSize="32sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/ivLogo"
-        android:layout_width="308dp"
-        android:layout_height="124dp"
-        android:layout_marginBottom="20dp"
-        android:contentDescription="Logo Autor"
-        android:src="@drawable/logo_pere_son_gall_header_md"
-        app:srcCompat="@drawable/logo_pere_son_gall_header_md"
-        tools:srcCompat="@drawable/logo_pere_son_gall_header_md" />
-
-    <ImageView
-        android:id="@+id/ivLogo2"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:contentDescription="Logo Autor"
-        android:src="@drawable/contacte"
-        app:srcCompat="@drawable/contacte"
-        tools:srcCompat="@drawable/contacte" />
+        android:text="Preguntes Freqüents"
+        android:textColor="#2C3E50"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔒 És segur aquest xat?"
+                android:textColor="#2C3E50"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Totalment. Tota la comunicació entre el teu mòbil i el servidor viatja per un túnel SSL. A més, si uses els missatges segurs, s'aplica xifratge asimètric RSA de punta a punta."
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🕵️‍♂️ Per què aparec com 'anonimus'?"
+                android:textColor="#2C3E50"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="L'aplicació està dissenyada per respectar la teva privacitat. Si inicies sessió sense escriure cap Nick, el sistema et posa automàticament 'anonimus' per protegir la teva identitat."
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✉️ Com envio un missatge secret?"
+                android:textColor="#2C3E50"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prem el botó 'ENVIAR MISSATGE SEGUR'. Et demanarà el Nick exacte de la persona. El missatge es xifrarà amb la seva clau pública RSA i només ell el podrà desxifrar i llegir."
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📄 On van a parar els PDFs?"
+                android:textColor="#2C3E50"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quan exportes la conversa, el document 'xat.pdf' es guarda automàticament a la carpeta pública de 'Descàrregues' (Downloads) del teu telèfon perquè el trobis a l'instant."
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/btnExitAutor"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#E67E22"
-        android:text="EXIT"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cornerRadius="6dp"
+        android:backgroundTint="#34495E"
+        android:text="TORNAR"
+        android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 

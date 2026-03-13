@@ -1,70 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#CED4DA">
+    android:background="@color/bg_app">
 
-    <Button
-        android:id="@+id/btnExit"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:text="SORTIR"
-        android:backgroundTint="#E74C3C"
-        android:textColor="#FFFFFF"/>
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp">
+
+        <com.example.xat.StatusView
+            android:id="@+id/connectionStatusChat"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/tvEstatServidor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Estat del Servidor"
+            android:textColor="@color/text_main"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnDarkMode"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="🌙"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#34495E" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SORTIR"
+            app:cornerRadius="6dp"
+            android:backgroundTint="#E74C3C"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
 
     <ScrollView
+        android:id="@+id/chatScrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#FFFFFF"
+        android:background="@color/bg_chat_area"
         android:padding="10dp">
 
         <TextView
             android:id="@+id/tvChatArea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
+            android:textColor="@color/text_chat"
             android:textSize="16sp" />
     </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/etMessage"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Escriu un missatge..."
-            android:background="#FFFFFF"
-            android:padding="12dp"
-            android:inputType="textShortMessage" />
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Escriu un missatge..."
+                android:background="@color/input_bg"
+                android:padding="12dp"
+                android:textColor="@color/text_chat"
+                android:inputType="textShortMessage" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="ENVIAR"
+                app:cornerRadius="6dp"
+                android:backgroundTint="#3498DB"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
 
         <Button
-            android:id="@+id/btnSend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="ENVIAR"
-            android:backgroundTint="#3498DB"
-            android:textColor="#FFFFFF"/>
+            android:id="@+id/btnSendUltra"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ENVIAR MISSATGE SEGUR (RSA)"
+            android:textStyle="bold"
+            app:cornerRadius="6dp"
+            android:backgroundTint="#2C3E50"
+            android:textColor="#F39C12"
+            android:layout_marginTop="10dp"/>
 
         <Button
             android:id="@+id/btnPdf"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="EXPORTAR PDF"
+            android:text="EXPORTAR CONVERSA A PDF"
+            app:cornerRadius="6dp"
             android:backgroundTint="#27AE60"
             android:textColor="#FFFFFF"
             android:layout_marginTop="5dp"/>
 
     </LinearLayout>
-
 </LinearLayout>

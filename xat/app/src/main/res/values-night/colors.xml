@@ -8,11 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="bg_app">#D0D6DC</color>
-    <color name="bg_chat_area">#FFFFFF</color>
-    <color name="text_main">#263E56</color>
-    <color name="text_chat">#263E56</color>
-    <color name="input_bg">#D0D6DC</color>
-    <color name="button_orange">#DE7A46</color>
-    <color name="primary">#DE7A46</color>
+    <color name="bg_app">#1A1A1A</color>
+    <color name="bg_chat_area">#2D2D2D</color>
+    <color name="text_main">#FFFFFF</color>
+    <color name="text_chat">#FFFFFF</color>
+    <color name="input_bg">#333333</color>
+    <color name="button_orange">#F08D5E</color> <color name="primary">#F08D5E</color>
 </resources>
